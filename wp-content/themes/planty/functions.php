@@ -49,8 +49,7 @@ function planty_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Header', 'planty' ),
-			'menu-2' => esc_html__( 'Footer', 'planty' ),
+			'menu-1' => esc_html__( 'Primary', 'planty' ),
 		)
 	);
 

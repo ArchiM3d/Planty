@@ -1,0 +1,27 @@
+/*!
+Theme Name: Planty enfant
+Template: planty
+*/
+
+body {
+	margin: 0 auto;
+}
+
+.site-header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-height: 80px;
+}
+
+.custom-logo{
+  max-width: 200px;
+  height: auto;
+}
+
+.main-navigation{
+  display: flex;
+  flex-direction: row;
+
+}
