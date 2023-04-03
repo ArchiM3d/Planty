@@ -78,7 +78,7 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-	margin: 0;
+	margin: 0 auto;
 }
 
 /**
@@ -967,3 +967,16 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+
+/* Partie nanard
+--------------------------------------------- */
+/*
+.site-header{
+  height: 80;
+  width: 100%;
+}
+
+.site-branding{
+  height: 100%;
+  width: auto;
+}*/
