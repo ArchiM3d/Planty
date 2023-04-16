@@ -15,119 +15,81 @@ body {
   max-height: 80px;
 }
 
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+}
+
+#site-navigation ul,
+#colophon ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 60px;
+}
+
+#site-navigation li,
+#colophon li {
+  list-style: none;
+}
+
+#site-navigation a,
+#colophon a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.custom-logo-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: stretch;
+  margin: auto 10%;
+}
+
 .custom-logo {
+  margin: auto;
   max-width: 200px;
   height: auto;
 }
 
-.main-navigation {
-  display: flex;
-  flex-direction: row;
 
+.menu-header-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-end {
+
+  background: #DC9F96;
+  border: 0;
+  padding: 30px 60px;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Syne;
+  margin-left: 60px;
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 767px) {
-  .site-header {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .custom-logo {
-    max-width: 100px;
-  }
-
-  .main-navigation {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  #primary-menu {
-    display: none;
-  }
-
-  #site-navigation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: white;
-    z-index: 9999;
-    padding: 20px;
-  }
-
-  #site-navigation ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #site-navigation li {
-    margin: 10px 0;
-  }
-
-  #site-navigation a {
-    font-size: 1.5rem;
-    color: #333;
-  }
-}
+@media only screen and (max-width: 767px) {}
 
 /* Tablet Styles */
-@media only screen and (max-width: 1023px) {
-  .custom-logo {
-    max-width: 150px;
-  }
-}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {}
 
 /* PC Styles */
-@media only screen and (min-width: 1024px) {
-  .site-header {
-    max-height: 100px;
-  }
-
-  .custom-logo {
-    max-width: 200px;
-    height: auto;
-  }
-
-  .custom-logo-link {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: stretch;
-  }
-
-  .main-navigation {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .menu-toggle {
-    display: none;
-  }
-
-  #primary-menu {
-    display: block;
-  }
-
-  #site-navigation ul {
-    display: flex;
-    flex-direction: row;
-  }
-
-  #site-navigation li {
-    margin: 0 10px;
-  }
-
-  #site-navigation a {
-    font-size: 1rem;
-    text-decoration: none;
-  }
-}
+@media only screen and (min-width: 1024px) {}
