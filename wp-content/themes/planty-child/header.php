@@ -59,6 +59,10 @@
           );
           ?>
         </div><!-- .site-branding -->
-        <button class="menu-end">Commander</button>
+        <?php
+        $locCommande = 'http://localhost/Planty/precommande/';
+        ?>
+        <a href="<?php echo $locCommande; ?>" class="menu-end">Commander</a>
+
       </nav><!-- #site-navigation -->
     </header><!-- #masthead -->
