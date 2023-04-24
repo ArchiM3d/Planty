@@ -66,10 +66,28 @@ body {
   list-style: none;
 }
 
-#site-navigation a,
-#colophon a {
-  font-size: 1rem;
+a {
   text-decoration: none;
+}
+
+#site-navigation ul li a,
+#colophon ul li a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+#site-navigation ul li a:hover,
+#colophon ul li a:hover {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #000000;
 }
 
 .custom-logo-link {
@@ -112,11 +130,15 @@ body {
   background: #DC9F96;
   border: 0;
   padding: 30px 60px;
-  color: #FFFFFF;
-  font-size: 16px;
-  font-weight: 700;
-  font-family: Syne;
   margin-left: 60px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .bouton-hovered a {
@@ -146,12 +168,18 @@ body .is-layout-flex {
   justify-content: center;
 }
 
+.planty-section-equipe {
+  position: relative;
+  margin: 0;
+}
+
 .wp-block-columns.has-background.is-layout-flex.wp-container-2,
 .wp-block-columns.has-background.is-layout-flex.wp-container-3 {
   border-radius: 100% / 10%;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   padding: 100px 50px;
+  border-bottom: 10px solid #E3D9D0;
 }
 
 .wp-block-columns.has-background.is-layout-flex.wp-container-14 {
@@ -175,27 +203,50 @@ body .is-layout-flex {
   max-height: 262px;
 }
 
+.rowavis {
+  margin: 0 10%;
+}
+
+div#wpcf7-f69-p17-o1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Form */
-form.wpcf7-form.init {
+div#wpcf7-f152-p19-o1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
-form label {
+form[aria-label="Formulaire de contact"].form-contacter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 400px;
+  max-width: 50%;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+form[aria-label="Formulaire de contact"].form-contacter label {
   width: 100%;
   height: auto;
-  font-family: 'Syne';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   display: flex;
-  color: #000000;
   flex-direction: column;
   gap: 10px;
   margin-bottom: 30px;
+  color: #000000;
 }
 
 .wpcf7-submit {
@@ -228,26 +279,87 @@ form label {
 
 .fleur-abso {
   position: absolute;
-  top: 15%;
+  top: 30%;
   left: 10%;
   max-width: 150px;
+  z-index: 0;
 }
 
 .feuille-abso {
   position: absolute;
   right: 60px;
   max-width: 150px;
-  bottom: -5%;
+  bottom: 0px;
   z-index: -1;
+  margin: -5px;
 }
 
-h2.wp-block-heading.has-text-align-center {
-  line-height: 36px;
+.section-title-1 {
+  margin-bottom: 100px;
+  color: #3B8E46;
+  justify-content: center;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 46px;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #000000;
+  text-transform: uppercase;
+}
+
+.section-title-2 {}
+
+.section-title-3 {
+  margin: 50px 0px 0px 0px;
+}
+
+.text-section-3 {
+  margin: 5px 0px 45px 0px;
+}
+
+form[aria-label="Formulaire de contact"].form-precommande {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  min-width: 400px;
+  max-width: 100%;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+form[aria-label="Formulaire de contact"].form-precommande.form-row-commande-number label {
+  width: 100%;
+  height: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  align-content: space-around;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.form-label-commande {
+  width: 100%;
+  height: auto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+  color: #ffffff;
 }
 
 .form-row-commande {
@@ -257,7 +369,7 @@ h2.wp-block-heading.has-text-align-center {
   align-content: center;
   align-items: stretch;
   justify-content: space-between;
-  width: 70%;
+  width: 100%;
 }
 
 .form-col-commande {
@@ -265,16 +377,22 @@ h2.wp-block-heading.has-text-align-center {
   flex-direction: column;
 }
 
+.form-col-commande-infos {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+}
+
 hr.hr-hori {
   width: 100%;
   height: 0px;
-  margin: 40px 0;
+  margin: 0;
 }
 
 hr.hr-verti {
   width: 0px;
   height: 100%;
-  margin: 0 40px;
+  margin: 0;
 }
 
 h2.form-section-title {
@@ -306,13 +424,15 @@ label.form-row-number {
   align-items: stretch;
   justify-content: space-between;
   gap: 10px;
+  max-height: 51px;
 }
 
 .number-style {
   background: #FFFFFF;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
   width: 51px;
-  height: 100%;
+  max-height: 51px;
+  min-height: 100%;
   outline: 0;
   border: 0;
   border-top-left-radius: 5px;
@@ -328,18 +448,21 @@ label.form-row-number {
   align-content: space-around;
   justify-content: space-evenly;
   align-items: stretch;
+  height: 100%;
 }
 
 .quantity-nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-height: 51px;
 }
 
 .quantity-button {
   border: none;
   border-left: 1px solid rgba(0, 0, 0, 0.08);
   width: 21px;
+  height: 50%;
   text-align: center;
   flex-basis: 100%;
   background: #DC9F96;
