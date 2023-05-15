@@ -1,9 +1,15 @@
 <?php
 
-if ( ! defined( '_S_VERSION' ) ) {
-	// Replace the version number of the theme on each release.
-	define( '_S_VERSION', '1.0.1' );
+if (!defined('_S_VERSION')) {
+  // Replace the version number of the theme on each release.
+  define('_S_VERSION', '1.0.1');
 }
+
+add_filter('wpcf7_form_elements', function ($content) {
+  $content = preg_replace('/<(span).*?class="\s*(?:.*\s)?wpcf7-form-control-wrap(?:\s[^"]+)?\s*"[^\>]*>(.*)<\/\1>/i', '\2', $content);
+
+  return $content;
+});
 
 /**
  * Add Menu Header Footer
@@ -39,6 +45,13 @@ function planty_child_scripts()
 {
   wp_enqueue_style('font-syne', 'https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap');
   wp_enqueue_style('planty-style', get_stylesheet_uri(), array(), _S_VERSION);
+  wp_enqueue_style('planty-header', get_stylesheet_directory_uri() . '/assets/css/header.css', array(), _S_VERSION);
+  wp_enqueue_style('planty-footer', get_stylesheet_directory_uri() . '/assets/css/footer.css', array(), _S_VERSION);
+  wp_enqueue_style('planty-accueil', get_stylesheet_directory_uri() . '/assets/css/accueil.css', array(), _S_VERSION);
+  wp_enqueue_style('planty-commande', get_stylesheet_directory_uri() . '/assets/css/commande.css', array(), _S_VERSION);
+  wp_enqueue_style('planty-contact', get_stylesheet_directory_uri() . '/assets/css/contact.css', array(), _S_VERSION);
+  wp_enqueue_style('planty-forms', get_stylesheet_directory_uri() . '/assets/css/forms.css', array(), _S_VERSION);
+  
   wp_enqueue_script('planty-js', get_stylesheet_directory_uri() . '/assets/js/planty.js', array(), _S_VERSION, true);
 }
 add_action('wp_enqueue_scripts', 'planty_child_scripts');
@@ -51,4 +64,4 @@ function planty_child_before_admin()
 }
 add_action('enqueue_block_editor_assets', 'planty_child_scripts');
 
-add_filter( 'wpcf7_autop_or_not', '__return_false' );
+add_filter('wpcf7_autop_or_not', '__return_false');

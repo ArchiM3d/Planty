@@ -31,38 +31,36 @@
       <div class="site-branding">
         <?php
         the_custom_logo();
-        if (is_front_page() && is_home()) :
-        ?>
+        if (is_front_page() && is_home()) : ?>
           <a href="<?php echo esc_url(home_url('/')); ?>" rel="home"></a>
-        <?php
-        else :
-        ?>
+        <?php else : ?>
           <a href="<?php echo esc_url(home_url('/')); ?>" rel="home"></a>
-        <?php
-        endif;
+        <?php endif;
         $planty_description = get_bloginfo('description', 'display');
-        if ($planty_description || is_customize_preview()) :
-        ?>
-          <p class="site-description"><?php echo $planty_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
-                                      ?></p>
+        if ($planty_description || is_customize_preview()) : ?>
+          <p class="site-description">
+            <?php echo $planty_description; ?>
+          </p>
         <?php endif; ?>
+        <button class="nav-btn menu-end">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div><!-- .site-branding -->
 
       <nav id="site-navigation" class="main-navigation">
-        <div class="menu-navi">
-          <?php
-          wp_nav_menu(
-            array(
-              'theme_location' => 'menu-1',
-              'menu_id'        => 'header-menu',
-            )
-          );
-          ?>
-        </div><!-- .site-branding -->
+        <?php
+        wp_nav_menu(
+          array(
+            'theme_location' => 'menu-1',
+            'menu_id'        => 'header-menu',
+          )
+        );
+        ?>
         <?php
         $locCommande = 'http://localhost/Planty/precommande/';
         ?>
         <a href="<?php echo $locCommande; ?>" class="menu-end">Commander</a>
-
       </nav><!-- #site-navigation -->
     </header><!-- #masthead -->

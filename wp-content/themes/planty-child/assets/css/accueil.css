@@ -1,0 +1,99 @@
+.boutons-com-accueil {
+  margin: 40px 0 20px 0;
+}
+
+.bouton-com-accueil a {
+  padding: 15px 50px;
+}
+
+.section-accueil-1 {
+  border-radius: 100% / 10%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 100px 50px;
+  border-bottom: 10px solid #E3D9D0;
+}
+
+.rowavis {
+  margin: 100px 10%;
+}
+
+.section-title-1 {
+  margin-bottom: 100px;
+  color: #3B8E46;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 46px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-title-2 {
+  margin: 50px 0;
+}
+
+.section-para-2 {
+  margin: 0 0 80px 0;
+}
+
+.section-title-3 {
+  margin: 50px 0px 0px 0px;
+}
+
+.text-section-3 {
+  margin: 5px 0px 45px 0px;
+}
+
+.section-title-4 {
+  margin: 100px 0;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 600px) {
+
+  .wp-block-cover,
+  .wp-block-cover-image {
+    min-width: 250px;
+  }
+
+  .text-image-box {
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .section-title-1 {
+    margin-bottom: 100px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .section-title-4 {
+    margin: 50px 0;
+  }
+
+  .rowavis {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .avi-client {
+    width: 100%;
+    align-items: stretch;
+  }
+}
+
+/* Mobile & Small Tablet Styles */
+@media only screen and (max-width: 781px) {}
+
+/* Tablet Styles */
+@media only screen and (max-width: 1023px) {
+  .avi-client {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* PC Styles */
+@media only screen and (min-width: 1024px) {}

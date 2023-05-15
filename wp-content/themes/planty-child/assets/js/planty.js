@@ -1,3 +1,15 @@
+var navButton = document.querySelector('.nav-btn');
+var siteNavigation = document.querySelector('#site-navigation');
+siteNavigation.style.display = "flex";
+
+navButton.addEventListener("click", function () {
+  if (siteNavigation.style.display === "none") {
+    siteNavigation.style.display = "flex";
+  } else {
+    siteNavigation.style.display = "none";
+  }
+});
+
 // Sélectionnez tous les boutons de quantité
 var quantityButtons = document.querySelectorAll(".quantity-button");
 

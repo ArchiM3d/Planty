@@ -14,108 +14,30 @@ body {
   font-family: 'Syne', sans-serif;
 }
 
-.site-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  max-height: 80px;
-  background-color: #ffffff;
+.wp-block-columns,
+figure {
+  margin: 0;
 }
 
-.site-footer {
+.text-image-box {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 58px;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  align-items: center;
-  background-color: #ffffff;
-}
-
-.main-navigation {
-  display: flex;
-  flex-direction: row;
-}
-
-#colophon ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: space-between;
-  align-content: center;
-  width: 100%;
-  height: 100%;
-}
-
-#site-navigation ul {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: space-between;
-  align-content: center;
-  width: 100%;
-  height: 100%;
-  gap: 60px;
-}
-
-#site-navigation li,
-#colophon li {
-  list-style: none;
 }
 
 a {
   text-decoration: none;
-}
-
-#site-navigation ul li a,
-#colophon ul li a {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-}
-
-#site-navigation ul li a:hover,
-#colophon ul li a:hover {
-  font-weight: 700;
-  font-size: 13px;
-  line-height: 16px;
-  display: flex;
-  align-items: center;
-  color: #000000;
-}
-
-.custom-logo-link {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  align-content: stretch;
-  margin: auto 10%;
-}
-
-.custom-logo {
-  margin: auto;
-  max-width: 200px;
-  height: auto;
-}
-
-.menu-header-container {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: stretch;
-  align-content: center;
-  flex-wrap: wrap;
 }
 
 .mb-10 {
@@ -124,21 +46,6 @@ a {
 
 .entry-title {
   display: none;
-}
-
-.menu-end {
-  background: #DC9F96;
-  border: 0;
-  padding: 30px 60px;
-  margin-left: 60px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 19px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #FFFFFF;
 }
 
 .bouton-hovered a {
@@ -153,12 +60,6 @@ a {
   background: #C02E44;
 }
 
-.footer-img,
-.footer-img img {
-  width: 100%;
-
-}
-
 .figure-p {
   max-width: 130px;
 }
@@ -168,24 +69,22 @@ body .is-layout-flex {
   justify-content: center;
 }
 
+.planty-section {
+  margin: 0;
+  padding: 0;
+}
+
 .planty-section-equipe {
   position: relative;
   margin: 0;
 }
 
-.wp-block-columns.has-background.is-layout-flex.wp-container-2,
-.wp-block-columns.has-background.is-layout-flex.wp-container-3 {
-  border-radius: 100% / 10%;
+.section-nous-contact-1 {
+  border-radius: 100% / 40%;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   padding: 100px 50px;
-  border-bottom: 10px solid #E3D9D0;
-}
-
-.wp-block-columns.has-background.is-layout-flex.wp-container-14 {
-  border-radius: 100% / 5%;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
+  border-bottom: 1px solid #E3D9D0;
 }
 
 .wp-block-cover,
@@ -201,10 +100,6 @@ body .is-layout-flex {
   min-width: 350px;
   max-width: 393px;
   max-height: 262px;
-}
-
-.rowavis {
-  margin: 0 10%;
 }
 
 div#wpcf7-f69-p17-o1 {
@@ -229,8 +124,8 @@ form[aria-label="Formulaire de contact"].form-contacter {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 400px;
-  max-width: 50%;
+  width: 100%;
+  max-width: 400px;
   align-content: center;
   flex-wrap: wrap;
 }
@@ -268,54 +163,25 @@ form[aria-label="Formulaire de contact"].form-contacter label {
 
 .wpcf7-form-control.wpcf7-text,
 .wpcf7-form-control.wpcf7-textarea {
-  width: 100%;
   height: 100%;
   min-height: 50px;
   background: #FFFFFF;
   border: 0px;
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
   border-radius: 7px;
+  z-index: 1;
 }
 
-.fleur-abso {
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  max-width: 150px;
-  z-index: 0;
+.section-equipe-title {
+  margin: 50px 0 0 0;
 }
 
-.feuille-abso {
-  position: absolute;
-  right: 60px;
-  max-width: 150px;
-  bottom: 0px;
-  z-index: -1;
-  margin: -5px;
+.section-equipe {
+  margin: 50px 0 80px 0;
 }
 
-.section-title-1 {
-  margin-bottom: 100px;
-  color: #3B8E46;
-  justify-content: center;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 38px;
-  line-height: 46px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-/* .section-title-2 {} */
-
-.section-title-3 {
-  margin: 50px 0px 0px 0px;
-}
-
-.text-section-3 {
-  margin: 5px 0px 45px 0px;
+.section-title-nous-contact {
+  margin: 45px 0 45px 0;
 }
 
 form[aria-label="Formulaire de contact"].form-precommande {
@@ -323,8 +189,8 @@ form[aria-label="Formulaire de contact"].form-precommande {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-width: 400px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 860px;
   align-content: center;
   flex-wrap: wrap;
   gap: 40px;
@@ -340,12 +206,24 @@ form[aria-label="Formulaire de contact"].form-precommande.form-row-commande-numb
   display: flex;
   flex-direction: row;
   gap: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #ffffff;
   align-content: space-around;
   justify-content: space-between;
   align-items: stretch;
   flex-wrap: wrap;
+}
+
+.section-title-com {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 46px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
 }
 
 .form-label-commande {
@@ -372,9 +250,14 @@ form[aria-label="Formulaire de contact"].form-precommande.form-row-commande-numb
   width: 100%;
 }
 
+.m-0 {
+  margin: 0;
+}
+
 .form-col-commande {
   display: flex;
   flex-direction: column;
+  gap: 15px;
 }
 
 .form-col-commande-infos {
@@ -396,7 +279,6 @@ hr.hr-verti {
 }
 
 h2.form-section-title {
-  font-family: 'Syne';
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -405,6 +287,7 @@ h2.form-section-title {
   align-items: center;
   color: #FFFFFF;
   width: 100%;
+  margin: 0 0 40px 0;
 }
 
 .form-row-commande-number {
@@ -503,12 +386,3 @@ label.form-row-number {
   border-radius: 5px;
   max-width: 100px;
 }
-
-/* Mobile Styles */
-@media only screen and (max-width: 767px) {}
-
-/* Tablet Styles */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {}
-
-/* PC Styles */
-@media only screen and (min-width: 1024px) {}
