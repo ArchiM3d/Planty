@@ -28,6 +28,36 @@
   margin: 100px 0 30px 0;
 }
 
+.planty-section {
+  margin: 0;
+  padding: 0;
+}
+
+.planty-section-equipe {
+  position: relative;
+  margin: 0;
+}
+
+.section-nous-contact-1 {
+  border-radius: 100% / 40%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 100px 50px;
+  border-bottom: 1px solid #E3D9D0;
+}
+
+.section-equipe-title {
+  margin: 50px 0 0 0;
+}
+
+.section-equipe {
+  margin: 50px 0 80px 0;
+}
+
+.section-title-nous-contact {
+  margin: 45px 0 45px 0;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
   .section-nous-contact-1 {

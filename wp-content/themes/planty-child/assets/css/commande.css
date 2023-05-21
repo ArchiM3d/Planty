@@ -1,3 +1,15 @@
+.section-title-com {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 38px;
+  line-height: 46px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {}
 
@@ -5,4 +17,8 @@
 @media only screen and (max-width: 1023px) {}
 
 /* PC Styles */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .section-title-com {
+    margin: 50px 0;
+  }
+}

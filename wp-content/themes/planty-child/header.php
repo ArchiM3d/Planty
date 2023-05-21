@@ -42,7 +42,12 @@
             <?php echo $planty_description; ?>
           </p>
         <?php endif; ?>
-        <button class="nav-btn menu-end">
+        <!-- <button class="nav-btn menu-end menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button> -->
+        <button class="nav-btn menu-end menu-toggle" aria-controls="header-menu" aria-expanded="false">
           <span></span>
           <span></span>
           <span></span>
