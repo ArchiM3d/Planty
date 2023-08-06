@@ -11,7 +11,7 @@
 .footer-img,
 .footer-img img {
   width: 100%;
-
+  margin-top: 40px;
 }
 
 #colophon ul {
@@ -28,10 +28,21 @@
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+  
+}
+
+/* Mobile & Small Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 781px) {
+  
+}
 
 /* Tablet Styles */
-@media only screen and (max-width: 1023px) {}
+@media only screen and (min-width: 782px) and (max-width: 1023px) {
+  
+}
 
 /* PC Styles */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  
+}

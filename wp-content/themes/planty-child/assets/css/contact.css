@@ -1,118 +1,140 @@
 .fleur-abso {
- position: absolute;
- top: 30%;
- right: 80%;
- max-width: 150px;
- z-index: 0;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  max-width: 150px;
+  z-index: 0;
 }
 
 .feuille-abso {
- position: absolute;
- right: 60px;
- max-width: 150px;
- bottom: 0px;
- z-index: -1;
- margin: -5px;
+  position: absolute;
+  right: 60px;
+  min-width: 100px;
+  max-width: 10%;
+  bottom: 0px;
+  z-index: -1;
+  margin: -5px;
 }
 
 .fleur-abso-contact {
- position: absolute;
- max-width: 150px;
- z-index: 0;
- margin: 100px 0px 0px -70px;
+  position: absolute;
+  max-width: 150px;
+  z-index: 0;
+  margin: 100px 0px 0px -70px;
 }
 
 .section-title-contact-1 {
+  color: #D2776A;
+  text-align: center;
+  font-family: Syne;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
 
- font-weight: 800;
- font-size: 38px;
- line-height: 46px;
- display: flex;
- align-items: center;
- text-align: center;
- justify-content: center;
- text-transform: uppercase;
- color: #D2776A;
-
- z-index: 1;
- position: relative;
- margin: 100px 10% 30px 10%;
+  z-index: 2;
+  position: relative;
+  margin: 100px 10% 30px 10%;
 }
 
 .text-section-contact-1 {
- font-family: 'Syne';
- font-style: normal;
- font-weight: 400;
- font-size: 20px;
- line-height: 24px;
- text-align: center;
- margin: auto;
- width: 50%;
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin: auto;
+  max-width: 650px;
+  width: 100%;
 }
 
 .planty-section {
- margin: 0;
- padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .planty-section-equipe {
- position: relative;
- margin: 0;
+  position: relative;
+  margin: 0;
 }
 
 .section-nous-contact-1 {
- border-radius: 100% / 40%;
- border-top-left-radius: 0;
- border-top-right-radius: 0;
- padding: 100px 50px;
- border-bottom: 1px solid #E3D9D0;
+  border-radius: 100% / 40%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 100px 50px;
+  border-bottom: 1px solid #E3D9D0;
 }
 
 .section-equipe-title {
- margin: 50px 0 0 0;
+  margin: 50px 0 0 0;
 }
 
 .section-equipe {
- margin: 50px 0 80px 0;
+  margin: 50px 0 80px 0;
 }
 
 .section-title-nous-contact {
- margin: 45px 0 45px 0;
+  margin: 45px 0 45px 0;
 }
 
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
- .section-nous-contact-1 {
-  padding: 20px 50px;
- }
+  .section-nous-contact-1 {
+    border-radius: 100% / 10%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 100px 20px;
+  }
+
+  .section-title-contact-1 {
+    max-width: 650px;
+  }
+
+  .section-equipe {
+    padding: 0 20px;
+  }
+  .contact-form-7-contact {
+    padding: 0 20px;
+  }
 }
 
 /* Mobile & Small Tablet Styles */
-@media only screen and (max-width: 781px) {
- .fleur-abso {
-  position: relative;
-  top: 0;
-  right: 0;
- }
+@media only screen and (min-width: 601px) and (max-width: 781px) {
+  .section-nous-contact-1 {
+    border-radius: 100% / 20%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
 
- .section-title-contact-1 {
-  z-index: 1;
-  position: relative;
-  margin: 0 0 30px 0;
- }
+  .text-section-contact-1 {
+    margin: 0 10% 10% 10%;
+    width: auto;
+  }
 
- .section-nous-contact-1 {
-  padding: 20px 50px;
- }
-
- .text-section-contact-1 {
-  margin: 0 10% 10% 10%;
-  width: auto;
- }
+  .section-title-contact-1 {
+    max-width: 650px;
+  }
 }
 
 /* Tablet Styles */
-@media only screen and (max-width: 1023px) {}
+@media only screen and (min-width: 782px) and (max-width: 1023px) {
+  .section-nous-contact-1 {
+    border-radius: 100% / 20%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .section-title-contact-1 {
+    max-width: 650px;
+  }
+}
 
 /* PC Styles */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .section-title-contact-1 {
+    max-width: 800px;
+  }
+}
