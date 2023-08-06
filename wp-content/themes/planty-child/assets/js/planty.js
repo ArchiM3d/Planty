@@ -1,11 +1,15 @@
+// Sélectionnez le bouton de la nav
 var navButton = document.querySelector('.nav-btn');
 var siteNavigation = document.querySelector('#site-navigation');
-siteNavigation.style.display = "flex";
 
+// Click sur le bouton de la nav
 navButton.addEventListener("click", function () {
-  if (siteNavigation.style.display === "none") {
+  // Vérifie si la navigation est masqué
+  if (getComputedStyle(siteNavigation).display === "none") {
+    // Si oui l'affiche avec flex
     siteNavigation.style.display = "flex";
   } else {
+    // Sinon la masque
     siteNavigation.style.display = "none";
   }
 });

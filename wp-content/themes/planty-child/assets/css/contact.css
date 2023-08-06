@@ -1,87 +1,114 @@
 .fleur-abso {
-  position: absolute;
-  top: 25%;
-  left: 15%;
-  max-width: 150px;
-  z-index: 0;
+ position: absolute;
+ top: 30%;
+ right: 80%;
+ max-width: 150px;
+ z-index: 0;
 }
 
 .feuille-abso {
-  position: absolute;
-  right: 60px;
-  max-width: 150px;
-  bottom: 0px;
-  z-index: -1;
-  margin: -5px;
+ position: absolute;
+ right: 60px;
+ max-width: 150px;
+ bottom: 0px;
+ z-index: -1;
+ margin: -5px;
 }
 
 .fleur-abso-contact {
-  position: absolute;
-  max-width: 150px;
-  z-index: 0;
-  margin: 100px 0px 0px -70px;
+ position: absolute;
+ max-width: 150px;
+ z-index: 0;
+ margin: 100px 0px 0px -70px;
 }
 
 .section-title-contact-1 {
-  z-index: 1;
-  position: relative;
-  margin: 100px 0 30px 0;
+
+ font-weight: 800;
+ font-size: 38px;
+ line-height: 46px;
+ display: flex;
+ align-items: center;
+ text-align: center;
+ justify-content: center;
+ text-transform: uppercase;
+ color: #D2776A;
+
+ z-index: 1;
+ position: relative;
+ margin: 100px 10% 30px 10%;
+}
+
+.text-section-contact-1 {
+ font-family: 'Syne';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 20px;
+ line-height: 24px;
+ text-align: center;
+ margin: auto;
+ width: 50%;
 }
 
 .planty-section {
-  margin: 0;
-  padding: 0;
+ margin: 0;
+ padding: 0;
 }
 
 .planty-section-equipe {
-  position: relative;
-  margin: 0;
+ position: relative;
+ margin: 0;
 }
 
 .section-nous-contact-1 {
-  border-radius: 100% / 40%;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  padding: 100px 50px;
-  border-bottom: 1px solid #E3D9D0;
+ border-radius: 100% / 40%;
+ border-top-left-radius: 0;
+ border-top-right-radius: 0;
+ padding: 100px 50px;
+ border-bottom: 1px solid #E3D9D0;
 }
 
 .section-equipe-title {
-  margin: 50px 0 0 0;
+ margin: 50px 0 0 0;
 }
 
 .section-equipe {
-  margin: 50px 0 80px 0;
+ margin: 50px 0 80px 0;
 }
 
 .section-title-nous-contact {
-  margin: 45px 0 45px 0;
+ margin: 45px 0 45px 0;
 }
 
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
-  .section-nous-contact-1 {
-    padding: 20px 50px;
-  }
+ .section-nous-contact-1 {
+  padding: 20px 50px;
+ }
 }
 
 /* Mobile & Small Tablet Styles */
 @media only screen and (max-width: 781px) {
-  .fleur-abso {
-    position: relative;
-    top: 0;
-    left: 10%;
-  }
+ .fleur-abso {
+  position: relative;
+  top: 0;
+  right: 0;
+ }
 
-  .section-title-contact-1 {
-    z-index: 1;
-    position: relative;
-    margin: 30px 0;
-  }
+ .section-title-contact-1 {
+  z-index: 1;
+  position: relative;
+  margin: 0 0 30px 0;
+ }
 
-  .section-nous-contact-1 {
-    padding: 20px 50px;
-  }
+ .section-nous-contact-1 {
+  padding: 20px 50px;
+ }
+
+ .text-section-contact-1 {
+  margin: 0 10% 10% 10%;
+  width: auto;
+ }
 }
 
 /* Tablet Styles */
