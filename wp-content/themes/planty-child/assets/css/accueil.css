@@ -21,32 +21,70 @@
 .section-title-1 {
   margin-bottom: 100px;
   color: #3B8E46;
+  text-align: center;
+  font-family: Syne;
+  font-size: 38px;
   font-style: normal;
   font-weight: 800;
-  font-size: 2.375rem;
-  line-height: 46px;
-  text-align: center;
+  line-height: normal;
   text-transform: uppercase;
 }
 
 .section-title-2 {
   margin-top: 60px;
+  color: #3B8E46;
+  text-align: center;
+  font-family: Syne;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .section-para-2 {
   margin: 50px 0 80px 0;
+  color: #000;
+  text-align: center;
+  font-family: Syne;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .section-title-3 {
   margin-top: 50px;
+  color: #D2776A;
+  text-align: center;
+  font-family: Syne;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 .text-section-3 {
-  margin: 10px 0px 50px 0px;
+  margin: 7px 0px 50px 0px;
+  color: #000;
+  text-align: center;
+  font-family: Syne;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .section-title-4 {
-  margin: 100px 0;
+  margin-top: 100px;
+  color: #3B8E46;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
 }
 
 .text-image-box {
@@ -61,6 +99,12 @@
 
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
+  .section-accueil-1 {
+    border-radius: 100% / 5%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 100px 20px;
+  }
 
   .wp-block-cover,
   .wp-block-cover-image {
@@ -83,15 +127,24 @@
 
   .avi-client {
     width: 100%;
+    flex-direction: column;
+    gap: 30px;
     align-items: stretch;
   }
 }
 
 /* Mobile & Small Tablet Styles */
-@media only screen and (max-width: 781px) {}
+@media only screen and (min-width: 601px) and (max-width: 781px) {
+  .avi-client {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
 
 /* Tablet Styles */
-@media only screen and (max-width: 1023px) {
+@media only screen and (min-width: 782px) and (max-width: 1023px) {
+
   .avi-client {
     width: 100%;
     flex-direction: column;
@@ -100,4 +153,8 @@
 }
 
 /* PC Styles */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .section-title-1 {
+    max-width: 800px;
+  }
+}
