@@ -91,6 +91,7 @@
 
   .section-title-contact-1 {
     max-width: 650px;
+    font-size: 32px;
   }
 
   .section-equipe {
@@ -116,6 +117,7 @@
 
   .section-title-contact-1 {
     max-width: 650px;
+    font-size: 34px;
   }
 }
 
@@ -129,6 +131,7 @@
 
   .section-title-contact-1 {
     max-width: 650px;
+    font-size: 36px;
   }
 }
 
@@ -136,5 +139,6 @@
 @media only screen and (min-width: 1024px) {
   .section-title-contact-1 {
     max-width: 800px;
+    font-size: 38px;
   }
 }
