@@ -27,7 +27,7 @@
   color: #D2776A;
   text-align: center;
   font-family: Syne;
-  font-size: 38px;
+  font-size: clamp(2rem, 1.8929rem + 0.5357vw, 2.375rem);
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -89,11 +89,6 @@
     padding: 100px 20px;
   }
 
-  .section-title-contact-1 {
-    max-width: 650px;
-    font-size: 32px;
-  }
-
   .section-equipe {
     padding: 0 20px;
   }
@@ -115,10 +110,7 @@
     width: auto;
   }
 
-  .section-title-contact-1 {
-    max-width: 650px;
-    font-size: 34px;
-  }
+  
 }
 
 /* Tablet Styles */
@@ -129,16 +121,10 @@
     border-top-right-radius: 0;
   }
 
-  .section-title-contact-1 {
-    max-width: 650px;
-    font-size: 36px;
-  }
+  
 }
 
 /* PC Styles */
 @media only screen and (min-width: 1024px) {
-  .section-title-contact-1 {
-    max-width: 800px;
-    font-size: 38px;
-  }
+  
 }
