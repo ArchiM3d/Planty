@@ -1,7 +1,7 @@
 .section-title-com {
   font-style: normal;
   font-weight: 800;
-  font-size: 38px;
+  font-size: clamp(1.25rem, 0.9286rem + 1.6071vw, 2.375rem);
   line-height: 46px;
   display: flex;
   align-items: center;

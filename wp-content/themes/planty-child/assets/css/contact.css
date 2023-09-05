@@ -27,7 +27,7 @@
   color: #D2776A;
   text-align: center;
   font-family: Syne;
-  font-size: 38px;
+  font-size: clamp(1.25rem, 0.9286rem + 1.6071vw, 2.375rem);
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -91,7 +91,6 @@
 
   .section-title-contact-1 {
     max-width: 650px;
-    font-size: 32px;
   }
 
   .section-equipe {
@@ -117,7 +116,6 @@
 
   .section-title-contact-1 {
     max-width: 650px;
-    font-size: 34px;
   }
 }
 
@@ -131,7 +129,6 @@
 
   .section-title-contact-1 {
     max-width: 650px;
-    font-size: 36px;
   }
 }
 
@@ -139,6 +136,5 @@
 @media only screen and (min-width: 1024px) {
   .section-title-contact-1 {
     max-width: 800px;
-    font-size: 38px;
   }
 }

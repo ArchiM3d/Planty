@@ -287,10 +287,6 @@ form[aria-label="Formulaire de contact"].form-contacter label {
 
 /* Mobile Styles */
 @media only screen and (max-width: 600px) {
-  .section-title-com {
-    font-size: 30px;
-  }
-
   .form-col-commande {
     flex-basis: 100%;
   }

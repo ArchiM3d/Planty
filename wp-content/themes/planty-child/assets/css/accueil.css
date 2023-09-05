@@ -24,7 +24,7 @@
   color: #3B8E46;
   text-align: center;
   font-family: Syne;
-  font-size: 38px;
+  font-size: clamp(1.25rem, 0.9286rem + 1.6071vw, 2.375rem);
   font-style: normal;
   font-weight: 800;
   line-height: normal;
